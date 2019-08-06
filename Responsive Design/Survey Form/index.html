@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-outer">
+        <p id="description">Let us know how we can improve</p>
+        <form id="survey-form">
+            <div class="row-tab">
+                <div class="labels">
+                    <label for="name" id="name-label">* Name</label>
+                </div>
+                <div class="right-tab">
+                    <input type="text" autofocus name="name" id="name" placeholder="Enter your name" class="input-field" required>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <label for="email" id="email-label">* Email</label>
+                </div>
+                <div class="right-tab">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="input-field" required>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <label for="age" id="age-label">* Age</label>
+                </div>
+                <div class="right-tab">
+                    <input type="number" name="age" id="age" placeholder="Age" class="input-field" required>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <label for="currentPos">Which option best describes your current role ?</label>
+                </div>
+                <div class="right-tab">
+                    <select id="dropdown" class="dropdown" name="currentPos">
+                        <option disabled value>Select an option</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer Not to Say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <label for="userRating">* How likely is that you would recommend Capgemini to a friend ?</label>
+                </div>
+                <div class="right-tab">
+                    <ul style="list-style: none;">
+                        <li class="radio">
+                            <label>Definitely<input type="radio" value="1" name="radio-buttons" class="userRating"></label>
+                        </li>
+                        <li class="radio">
+                            <label>May be<input type="radio" value="2" name="radio-buttons" class="userRating"></label>
+                        </li>
+                        <li class="radio">
+                            <label>Not Sure<input type="radio" value="3" name="radio-buttons" class="userRating"></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <label for="most-like">Which option best describes your current role ?</label>
+                </div>
+                <div class="right-tab">
+                    <select id="dropdown" class="dropdown" name="currentPos">
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="project">Project</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <label for="preferences">Things that should be improved in the future (ckeck all that apply):</label>
+                </div>
+                <div class="right-tab">
+                    <ul id="preferences" style="list-style: none;">
+                        <li class="checkbox">
+                            <label>Front-end Projects<input type="checkbox" name="prefer" value="1" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>Back-end Projects<input type="checkbox" name="prefer" value="2" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>Data Visualization<input type="checkbox" name="prefer" value="3" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>Challenges<input type="checkbox" name="prefer" value="4" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>Open Source Community<input type="checkbox" name="prefer" value="5" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>Gitter Help Rooms<input type="checkbox" name="prefer" value="6" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>Videos<input type="checkbox" name="prefer" value="7" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>City Meetups<input type="checkbox" name="prefer" value="8" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>Wiki<input type="checkbox" name="prefer" value="9" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>Forum<input type="checkbox" name="prefer" value="10" class="userRating"></label>
+                        </li>
+                        <li class="checkbox">
+                            <label>Additional Courses<input type="checkbox" name="prefer" value="11" class="userRating"></label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row-tab">
+                <div class="labels">
+                    <label for="comments">Any comments or suggestions ?</label>
+                </div>
+                <div class="right-tab">
+                    <textarea id="comments" class="input-field" style="height: 50px; resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
