@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+        :root {
+            background-color: #858c87;
+            font-size: 16px;
+        }
+
+        #root {
+            height: auto;
+            max-width: 450px;
+            background-color: azure;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        #root > h1 {
+            font-family: 'Righteous', cursive;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: #222;
+        }
+
+        form {
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+        [type="text"], button {
+            display: inline-block;
+            -webkit-appearance: none;
+            padding: .5rem 1rem;
+            font-size: 1rem;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            border: 2px solid #007bff;
+            margin: 0 .5rem;
+        }
+
+
+        p {
+            align-items: center;
+            padding: 1rem;
+        }
+
+        [type="text"] {
+            width: 100%;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        [type="text"]:active,
+        [type="text"]:focus {
+            outline: 0;
+            border: 2px solid #007bff;
+        }
+
+        [type="checkbox"] {
+            margin-right: 1rem;
+            font-size: 2rem;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f4f4f4;
+            border-radius: 4px;
+        }
+
+        li span {
+            display: inline-block;
+            padding: .5rem;
+            width: 250px;
+            border-radius: 4px;
+            border: 2px solid transparent;
+        }
+
+        li span:hover {
+            background: rgba(179, 215, 255, 0.52);
+        }
+
+        li span:focus {
+            outline: 0;
+            border: 2px solid #007bff;
+            background: rgba(179, 207, 255, 0.52)
+        }
+        .todo-list {
+            font-family: 'Dancing Script', cursive;
+        }
