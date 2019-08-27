@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-        @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
-        :root {
+        html {
             background-color: #858c87;
             font-size: 16px;
         }
@@ -37,6 +37,7 @@
 
         button {
             cursor: pointer;
+            font-family: 'Righteous', cursive;
             background: #007bff;
             color: white;
             border: 2px solid #007bff;
